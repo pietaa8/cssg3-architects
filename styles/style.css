@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.text-primary{
+    color: rgb(61, 47, 22);
+}
+
+.btn-primary{
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    border: 0;
+    padding: 18px 35px;
+    height: 64px;
+    border-radius: 5px;
+    background-color: greenyellow;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    
+}
+
+
+.header{
+    background: white;
+    background-repeat: no-repeat;
+}
+/* header and navigation styles*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 200px;
+}
+.nav-title{
+    font-weight: 800;
+    font-size: 45px;
+    color: black;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav li{
+    list-style: none;
+    margin-left: 50px;
+}
+.banner{
+    /* display: grid */
+    text-align: center;
+     margin: 0 50px;
+}
+.banner-title{
+    font-weight: 700;
+    font-size: 85px;
+
+}
+.banner-sub-title{
+    font-weight: 600;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.banner-description{
+    color: grey;
+    font-size: 18px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+/* quick list of our feature */
+
+.feature{
+    margin-top: 90px;
+}
+.feature{
+    display: flex;
+    /* gap: 5px; */
+}
+.third-row-second-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 5px; */
+}
+.feature > div{
+    flex: 1;
+}
