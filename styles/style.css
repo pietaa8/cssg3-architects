@@ -34,7 +34,7 @@ nav{
 .nav-title{
     font-weight: 800;
     font-size: 45px;
-    color: black;
+    color: olive;
 }
 nav ul{
     display: flex;
@@ -68,10 +68,12 @@ nav li{
 
 /* quick list of our feature */
 
-.feature{
+.quick-list{
     margin-top: 90px;
+    margin-bottom: 150px;
+    gap: 20px;
 }
-.feature{
+.quick-list{
     display: flex;
     /* gap: 5px; */
 }
@@ -80,6 +82,167 @@ nav li{
     grid-template-columns: repeat(2, 1fr);
     /* gap: 5px; */
 }
-.feature > div{
+.quick-list > div{
     flex: 1;
+}
+
+/* features you will love */
+
+.button-primary{
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    border: 0;
+    padding: 18px 35px;
+    height: 64px;
+    border-radius: 5px;
+    background-color: greenyellow;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    
+}
+.features{
+    margin-top: 150px;
+    text-align: left;
+     margin: 0 50px;
+     display: flex;
+     gap: 55px;
+}
+.feature-title{
+    font-weight: 630;
+    font-size: 65px;
+
+}
+.feature-sub-title{
+    font-weight: 400;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.feature-description{
+    color: grey;
+    font-size: 18px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+
+/* some facts styles */
+.facts{
+    margin-top: 150px;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: left;
+    
+}
+.fact-container{
+    margin-top: 130px;
+    display: flex;
+    gap: 54px;
+}
+.fact{
+    background: white;
+    box-shadow: 0px 6px 50px navajowhite;
+    border-radius: 5px;
+    padding: 30px;
+}
+.fact-title{
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.fact-description{
+    color: gray;
+}
+
+/* our sponsors styles */
+.sponsors{
+    margin-top: 150px;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    
+}
+.sponsor-container{
+    margin-top: 130px;
+    display: flex;
+    gap: 54px;
+    align-items: center;
+}
+.sponsor{
+    background: white;
+    border-radius: 1px;
+    padding: 10px;
+}
+.sponsor-title{
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.sponsor-description{
+    color: gray;
+}
+
+/* lines */
+.lines{
+    margin-top: 150px;
+    text-align: center;
+    margin-bottom: 220px;
+    background-color: paleturquoise;
+}
+
+/* extra sectionss */
+
+/* contact styles */
+.direct-message{
+    display: flex;
+    gap: 150px;
+    background: lightgreen;
+    padding: 130px 200px;
+}
+.direct-message .section-title{
+    text-align: center;
+    color: blue;
+    margin-bottom: 55px;
+}
+.direct-message input[type="text"], input[type="email"], textarea{
+    margin-bottom: 24px;
+    border: 0;
+    width: 100%;
+    padding: 18px 30px;
+}
+input{
+    height: 64px;
+    color: red;
+}
+
+.direct-message a{
+    text-decoration: none;
+}
+
+/* mobile devices */
+
+@media only screen and (max-width:688px){
+    .quick-list{
+        width: 100%;
+    }
+    .facts, .sponsors, .lines{
+        background-color: beige;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .fact, .sponsor, .line{
+        flex-direction: column;
+    }
+}
+/* tablet devices */
+
+@media only screen and (min-width:688px) and (max-width:992px){
+    .quick-list{
+        width: 100%;
+    }
+    .banner, .sponsors, .lines{
+        background-color: beige;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
